@@ -18,6 +18,15 @@
 
 **Dataset:** BraTS2021 brain MRI scans (access subject to the dataset provider's terms). The raw MRI scans and annotations are **not redistributed** in this repository.
 
+- **Kaggle dataset page:** [BraTS 2021 Task 1 Dataset](https://www.kaggle.com/datasets/dschettler8845/brats-2021-task1)
+- **Official BraTS2021 challenge and data citation guidance:** [CBICA, University of Pennsylvania](https://www.med.upenn.edu/cbica/brats2021/)
+
+**Dataset acknowledgement and required references:** The original BraTS organizers and dataset contributors should be credited. For academic use and formal publication, follow the full citation and data-use requirements on the official challenge page. Key references include:
+
+1. Baid, U. et al. (2021). *The RSNA-ASNR-MICCAI BraTS 2021 Benchmark on Brain Tumor Segmentation and Radiogenomic Classification.* [arXiv:2107.02314](https://arxiv.org/abs/2107.02314).
+2. Menze, B. H. et al. (2015). *The Multimodal Brain Tumor Image Segmentation Benchmark (BRATS).* IEEE Transactions on Medical Imaging. [DOI:10.1109/TMI.2014.2377694](https://doi.org/10.1109/TMI.2014.2377694).
+3. Bakas, S. et al. (2017). *Advancing The Cancer Genome Atlas glioma MRI collections with expert segmentation labels and radiomic features.* Scientific Data. [DOI:10.1038/sdata.2017.117](https://doi.org/10.1038/sdata.2017.117).
+
 1. Load the four MRI sequences for each subject in the order **T1, T1ce, T2, FLAIR**.
 2. Apply a per-volume, nonzero-voxel Z-score normalization to each modality.
 3. Resize axial MRI slices to **128 × 128** with bilinear interpolation (`INTER_LINEAR`).
